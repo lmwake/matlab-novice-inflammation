@@ -174,10 +174,15 @@ disp(['Weight in kg: ', num2str(weight_kg); 'Weight in pounds: ', num2str(weight
 Weight in kg: 57.5
 Weight in pounds: 126.5
 ~~~
-
+COMMENT BEGINS
+Lines 167-175 do not work as intended. It is correct that assignment of weight_kg does not
+alter weight_lb because weight_in__kg is not defined. Is this a typo? weight_lb does not
+change it's value - correct - but for the wrong reasons. An error message is produced and not
+the output stated on lines 174 and 175
+COMMENT ENDS
 <img src="fig/matlab-sticky-note-variables-02.svg" alt="Creating another variable" />
 
-Let's update the value of one of our variable, and print the values
+Let's update the value of one of our variables, and print the values
 of both:
 
 ~~~ {.matlab}
